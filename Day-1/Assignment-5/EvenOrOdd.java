@@ -14,7 +14,6 @@ public class EvenOrOdd {
     public static boolean evenOrOdd(int n) {
         //  Your code goes here....
         //  
-        n=15;
         if(n%2==0){
             return true;
         }
