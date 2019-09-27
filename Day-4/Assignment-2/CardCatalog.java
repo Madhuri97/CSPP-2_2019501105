@@ -2,7 +2,7 @@ class CardCatalog {
     Card[] myCard;
     int cardCatalogCount;
     CardCatalog() {
-        this.myCard = new Card[4];
+        this.myCard = new Card[5];
         this.cardCatalogCount = 0;
     }
     //adding 

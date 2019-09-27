@@ -44,4 +44,3 @@ class Contact {
     }
 }
 //  Your code goes here... For Contact class
-
