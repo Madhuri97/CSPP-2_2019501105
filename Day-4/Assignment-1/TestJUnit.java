@@ -68,7 +68,7 @@ public class TestJUnit {
 
 	@Test
 	public void testCase4() {
-		ContactsManager contactManager = new ContactsManager();
+		ContactsManager contactManager = new ContactsManager(); // int a = 1;
 		contactManager.addContact(new Contact("Bob Sedgewick", "bob@gmail.com", "9999912345"));
 		contactManager.addContact(new Contact("Alice", "alice@gmail.com", "9999912344"));
 		contactManager.addContact(new Contact("Peter Norvig", "norvig@gmail.com", "9999912343"));
