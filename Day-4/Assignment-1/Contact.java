@@ -13,6 +13,7 @@ class Contact {
     private String email;
     private String phoneNumber;
     //constructor
+    
     Contact(final String n, final String e, final String p) {
         this.name = n;
         this.email = e;

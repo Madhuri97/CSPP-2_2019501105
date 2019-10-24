@@ -24,7 +24,7 @@
      */
      public static double pow(float a, int b) {
         return (double) Math.pow(a, b);
-     }
+     } 
      public static int pow(int a, float b) {
       return (int) Math.pow(a, b);
      }
