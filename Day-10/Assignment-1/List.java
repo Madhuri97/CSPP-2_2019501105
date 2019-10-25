@@ -1,31 +1,35 @@
-/**
- * 
- */
-
 public class List extends AbstractList {
-
-    List() {
-        super();
-    }
-    
     public void add(int item) {
-        this.list[size] = item;
-        size++;
-        if(size == capacity) {
-            resize();
+        if (size == intList.length){
+            this.resize();
+        }
+        intList[this.size()] = item;
+        size += 1;
+        
+    }
+    public void addAll(List lst) {
+        if ((size+lst.size) >= intList.length){
+            this.resize();
+        }
+        for (int i=0; i<lst.size; i++){
+            intList[size] = lst.intList[i];
+            size += 1;
         }
     }
-
-    public void add(int index, int item) {
-        // int i = index;
-        // if()
-        for(int i = size; i > index; i--) {
-            list[i] = list[i-1];
+    public void addAll(int[] arr ){
+        if ((size+arr.length) >= intList.length){
+            this.resize();
         }
-        list[index] = item;
-        size++;
-        if(size == capacity) {
-            resize();
+        for (int i=0; i<arr.length; i++){
+            intList[size] = arr[i];
+            size += 1;
         }
     }
+    public int indexOf(int item) {
+        for (int i=0; i<size; i++) {
+            if (intList[i] == item) {
+                return i;
+            }
+        } return -1;
+    }    
 }
